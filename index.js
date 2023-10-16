@@ -1,14 +1,15 @@
-import { addArt } from "./src/art.js";
+import { addArt,getAllArt } from "./src/art.js";
 
-addArt({
+await addArt({
     artist: "Van Gogh",
-    title: "Sunflowers",
+    title: "Starry Night",
     media: "Oil",
 })
 
-addArt({
-    artist: "da Vinci",
-    title: "Mona Lisa",
-    media: "Oil",
-})
+// await addArt({
+//     artist: "da Vinci",
+//     title: "Last Supper",
+//     media: "Oil",
+// })
 
+await getAllArt();
